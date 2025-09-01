@@ -1,0 +1,124 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  height: 800px;
+}
+
+.left {
+  width: 50%;
+}
+
+.c-text {
+  font-size: 22px;
+  color: #1877f2;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  width: 1000px;
+  height: 400px;
+}
+
+.right {
+  width: 40%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.right h1 {
+  font-size: 28px;
+}
+
+.right h2 {
+  font-size: 18px;
+  color: #606770;
+  margin-bottom: 15px;
+  padding-top: 1.5px;
+}
+
+h4 {
+  padding-top: 5px;
+  padding-bottom: 6px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"],
+.signup-form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccd0d5;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-form input[type="text"]:hover,
+.signup-form input[type="password"]:hover,
+.signup-form input[type="date"]:hover {
+  border-color: #4267B2;
+}
+
+.signup-form input[type="text"]:focus,
+.signup-form input[type="password"]:focus,
+.signup-form input[type="date"]:focus {
+  border-color: #4267B2;
+  box-shadow: 0 0 0 3px #4267B2;
+  outline: none;
+}
+
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.signup-form label {
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.sign-up {
+  background: #42b72a;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sign-up:hover {
+  background: #36a420;
+  transform: scale(1.03); 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.sign-up:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .left, .right {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
